@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/eventListener.xsd">
+	<import>
+		<eventlistener name="jcoinsEasyMediaVideo">
+			<eventclassname>easymedia\data\video\VideoAction</eventclassname>
+			<eventname>finalizeAction</eventname>
+			<listenerclassname>easymedia\system\event\listener\JCoinsEasyMediaVideoActionListener</listenerclassname>
+		</eventlistener>
+	</import>
+</data>

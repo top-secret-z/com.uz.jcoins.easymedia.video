@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="com.uz.jcoins.easymedia.video" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[JCoins - EasyMedia Videos Extension]]></packagename>
+		<packagedescription>Adds EasyMedia Videos functions to JCoins.</packagedescription>
+		<packagename language="de"><![CDATA[JCoins - EasyMedia Videos-Erweiterung]]></packagename>
+		<packagedescription language="de">Ergänzt JCoins um EasyMedia Videos-Funktionen.</packagedescription>
+		<version>5.5.0</version>
+		<date>2022-05-27</date>
+	</packageinformation>
+	
+	<authorinformation>
+		<author>Zaydowicz</author>
+	</authorinformation>
+	
+	<requiredpackages>
+		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="5.3.0">com.cls.easymedia.video</requiredpackage>
+		<requiredpackage minversion="5.3.0">de.wcflabs.wcf.jcoins</requiredpackage>
+	</requiredpackages>
+	
+	<excludedpackages>
+		<excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+	</excludedpackages>
+	
+	<instructions type="install">
+		<instruction type="file" application="easymedia">files.tar</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
+		<instruction type="objectType">objectType.xml</instruction>
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.2.*">
+		<instruction type="file" application="easymedia">files.tar</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.3.*">
+		<instruction type="file" application="easymedia">files.tar</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="5.4.*">
+		<instruction type="file" application="easymedia">files.tar</instruction>
+	</instructions>
+</package>
